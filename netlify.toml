@@ -1,0 +1,12 @@
+[build]
+  command = "bundle exec jekyll build --config _config.yml --incremental"
+  publish = "_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+
+[[plugins]]
+  package = "netlify-plugin-jekyll-cache"
+
+[[plugins]]
+    package = "netlify-plugin-debug-cache"

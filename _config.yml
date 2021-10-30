@@ -37,3 +37,16 @@ channels:
   - "Telegram"
   - "Signal"
   - "Messenger"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - yarn.lock
+  - package-lock.json
+  - README.md
+  - postcss.config.js
+  - purgecss.config.js
+  - netlify.toml
+  - bin
+  - .gitignore
