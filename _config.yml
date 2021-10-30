@@ -17,6 +17,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-webp
   - jekyll-postcss
+  - jekyll-purgecss
 
 webp:
   enabled: true

@@ -80,6 +80,6 @@ Examples:
 
 ## Troubleshooting
 
-If running into the `Error: unterminated attribute selector for type` error:
+**If running into the `Error: unterminated attribute selector for type` error:**
 
 Run `npm audit fix` to restore working order.
