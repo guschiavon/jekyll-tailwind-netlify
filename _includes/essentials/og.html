@@ -1,0 +1,26 @@
+<title>{% if page.title != nil %} {{page.title}} {% else %} {{site.data.settings.branding.site_title}} {% endif %} </title>
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.data.settings.branding.site_title }}{% endif %}">
+<meta property="og:url" content="{{site.data.settings.general.site_url}}{{ page.url }}">
+<meta property="og:image" content="{% if page.preview_image %}{{site.data.settings.general.site_url}}/{{page.preview_image}} {% else %}{{site.data.settings.general.site_url}}/{{ site.data.settings.branding.preview_image }}{% endif %}" />
+<meta property="og:image:url" content="{% if page.preview_image %}{{site.data.settings.general.site_url}}/{{page.preview_image}} {% else %}{{site.data.settings.general.site_url}}/{{ site.data.settings.branding.preview_image }}{% endif %}" />
+<meta property="og:image:secure_url" content="{% if page.preview_image %}{{site.data.settings.general.site_url}}/{{page.preview_image}} {% else %}{{site.data.settings.general.site_url}}/{{ site.data.settings.branding.preview_image }}{% endif %}" />
+<meta property="og:image:type" content="image/jpg" />
+<meta property="og:image:width" content="600" />
+<meta property="og:image:alt" content="{{page.preview_image_alt_text}}" />
+<meta property="og:site_name" content="{{ site.data.settings.branding.site_title }}">
+<meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data.settings.seo.site_description_text }}{% endif %}">
+<meta property="fb:app_id" content="{{site.data.settings.seo.fb_app_id}}">
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.data.settings.branding.site_title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.data.settings.seo.site_description_text }}{% endif %}">
+<meta name="twitter:site" content="{{site.data.settings.general.twitter_handle}}" />
+<meta name="twitter:creator" content="{{site.data.settings.general.twitter_handle}}">
+<meta name="twitter:card" content="summary">
+
+<meta name="keywords" content="{% if page.keywords %} {{page.keywords}} {% else %} {% for keyword in site.data.settings.seo.keywords %} {{ keyword }} {% endfor %} {% endif %}">
+<meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }} {% else %} {{ site.data.settings.seo.site_description_text | truncate: 160  }} {% endif %}" />
+
+<link rel="canonical" href="{{site.data.settings.general.site_url}}{{page.url}}">

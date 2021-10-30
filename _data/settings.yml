@@ -1,0 +1,58 @@
+general:
+  site_url: 
+  address:
+  email:
+  phone:
+  social:
+    - channel: "Facebook"
+      add_to_chat_bubble: false
+      url: 'https://facebook.com'
+    - channel: "WhatsApp"
+      add_to_chat_bubble: true
+      url: 'https://facebook.com'
+    - channel: "Messenger"
+      add_to_chat_bubble: true
+      url: 'https://facebook.com'
+branding:
+  site_title: Jekyll Tailwind CloudCannon
+  nav_logo_image: /assets/images/logo.png
+  footer_logo_image:
+  preview_image:
+navigation:
+  menus:
+    - name: About
+      url: /about
+      is_dropdown: false
+      style_as_button: false
+      submenus:
+        - name:
+          url:
+    - name: Dropdown
+      url: '#'
+      is_dropdown: true
+      style_as_button: false
+      submenus:
+        - name: Item 1
+          url: /
+        - name: Item 2
+          url: /
+        - name: Item 3
+          url: /
+    - name: More
+      url: '#'
+      is_dropdown: true
+      style_as_button: false
+      submenus:
+        - name: Item 1
+          url: /
+        - name: Item 2
+          url: /
+        - name: Item 3
+          url: /
+seo:
+  site_description_text:
+  keywords:
+configuration:
+  head_code_block: 
+  body_code_block:
+  custom_css_code_block:   

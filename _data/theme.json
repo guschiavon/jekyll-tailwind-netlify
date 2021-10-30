@@ -1,0 +1,24 @@
+{
+  "colors": {
+    "primary_color": "#5e69ff",
+    "secondary_color": "#ff0000",
+    "tertiary_color": "#464646",
+    "accent_color": "#FF6cba",
+    "body_text_color": "#444444",
+    "heading_1_text_color": "blue",
+    "heading_2_text_color": "green",
+    "heading_3_text_color": "yellow",
+    "heading_4_text_color": "pink",
+    "link_text_color": "red",
+    "button_solid_background_color": "#444466",
+    "button_solid_text_color": "#999999",
+    "button_solid_border_color": "#999999",
+    "button_outline_background_color": "transparent",
+    "button_outline_text_color": "#222222",
+    "button_outline_border_color": "#222222"
+  },
+  "fonts": {
+    "body_font_family": "",
+    "heading_font_family": ""
+  }
+}
