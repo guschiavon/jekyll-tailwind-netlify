@@ -30,7 +30,7 @@ collections:
           - {label: "Page Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Permalink", name: "permalink", widget: "hidden", default: "/"}
-          - {label: "Header Background Image", name: "header_image", widget: "image" }
+          - {label: "Header Background Image", name: "header_background_image", widget: "image" }
   # - name: "settings"
   #   label: Site Settings
   #   files:
