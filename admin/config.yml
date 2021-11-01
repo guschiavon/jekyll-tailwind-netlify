@@ -24,12 +24,13 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "/pages/index.html"
+        file: "pages/index.html"
         fields:
           - {label: "Layout", name: "layout", widget: "hidden"}
           - {label: "Page Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Permalink", name: "permalink", widget: "hidden", default: "/"}
+          - {label: "Header Background Image", name: "header_image", widget: "image" }
   # - name: "settings"
   #   label: Site Settings
   #   files:
