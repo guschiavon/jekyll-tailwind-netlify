@@ -24,7 +24,7 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "/index.html"
+        file: "pages/index.html"
         fields:
           - {label: Layout, name: layout, widget: hidden}
           - {label: Page Title, name: title, widget: string}
