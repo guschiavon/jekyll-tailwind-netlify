@@ -24,9 +24,17 @@ collections:
     files:
       - label: "Home"
         name: "home"
-        file: "pages/index.html"
+        file: "/pages/index.html"
         fields:
-          - {label: Layout, name: layout, widget: hidden}
-          - {label: Page Title, name: title, widget: string}
-          - {label: Description, name: description, widget: text}
-      
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/"}
+  # - name: "settings"
+  #   label: Site Settings
+  #   files:
+  #     - name: configuration
+  #       label: configuration
+  #       file: "_data/settings.yml"
+  #       description: "Site configuration"
+  #       fields:

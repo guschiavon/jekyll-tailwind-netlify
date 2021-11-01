@@ -1,6 +1,8 @@
 cloudcannon:
   data: true
 
+netlifycms: true
+
 sass:
   dir: _sass
   style: compressed  
