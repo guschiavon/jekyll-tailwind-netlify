@@ -19,4 +19,14 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Content", name: "content", widget: "markdown"}
       - {label: "Keywords", name: "keywords", widget: "string"}
+  - name: "pages"
+    label: Pages
+    files:
+      - label: "Home"
+        name: "home"
+        file: "/index.html"
+        fields:
+          - {label: Layout, name: layout, widget: hidden}
+          - {label: Page Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text}
       
