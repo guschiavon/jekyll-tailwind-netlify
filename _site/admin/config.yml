@@ -1,0 +1,41 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "assets/images" 
+
+collections:
+  - name: "conditions"
+    label: Conditions
+    folder: "_conditions"
+    create: true
+    slug: "{{header_title}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "conditions"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Header Title", name: "header_title", widget: "string"}
+      - {label: "Header Button Text", name: "header_button_text", widget: "string"}
+      - {label: "Header Image", name: "header_image", widget: "image"}      
+      - {label: "Short Description", name: "short_description", widget: "markdown"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Content", name: "content", widget: "markdown"}
+      - {label: "Keywords", name: "keywords", widget: "string"}
+  - name: "pages"
+    label: Pages
+    files:
+      - label: "Home"
+        name: "home"
+        file: "pages/index.html"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Page Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Permalink", name: "permalink", widget: "hidden", default: "/"}
+          - {label: "Header Background Image", name: "header_background_image", widget: "image" }
+  # - name: "settings"
+  #   label: Site Settings
+  #   files:
+  #     - name: configuration
+  #       label: configuration
+  #       file: "_data/settings.yml"
+  #       description: "Site configuration"
+  #       fields:
