@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: main
 logo_url: /assets/images/logo.png
-locale: 'pt'
+locale: 'en'
 media_folder: "assets/images" 
 
 collections:
@@ -45,22 +45,28 @@ collections:
         description: 'General Site Settings'
         fields:
           - { label: 'Global title', name: 'site_title', widget: 'string' }
-          - label: 'Post Settings'
-            name: posts
+          - label: 'Practice Info'
+            name: site
             widget: 'object'
             fields:
-              - {
-                  label: 'Number of posts on frontpage',
-                  name: front_limit,
-                  widget: number,
-                  min: 1,
-                  max: 10,
-                }
-              - { label: 'Default Author', name: author, widget: string }
-              - {
-                  label: 'Default Thumbnail',
-                  name: thumb,
-                  widget: image,
-                  class: 'thumb',
-                  required: false,
-                }
+              - label: 'Opening hours'
+                name: opening_hours
+                widget: object
+                fields: 
+                  - { label: 'Monday', widget: string, name: monday }
+                  - { label: 'Tuesday', widget: string, name: tuesday }
+                  - { label: 'Wednesday', widget: string, name: wednesday }
+                  - { label: 'Thursday', widget: string, name: thursday }
+                  - { label: 'Friday', widget: string, name: friday }
+                  - { label: 'Saturday', widget: string, name: saturday }
+                  - { label: 'Sunday', widget: string, name: sunday }
+              - label: 'Address'
+                name: address
+                widget: object
+                fields: 
+                  - {label: Street Address, widget: string, name: street_address }
+                  - {label: 'Town/City', widget: string, name: city }
+                  - {label: 'State/Province', widget: string, name: state }
+                  - {label: Postcode, widget: string, name: postcode }
+                  - {label: Country, widget: string, name: country }
+          - { label: 'Default Thumbnail', name: thumb, widget: image,class: 'thumb', required: false,}
