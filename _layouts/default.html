@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-{% include essentials/head.html %}
+{% include main/head.html %}
 
 <body class="min-h-screen flex flex-col overflow-x-hidden" style="scroll-behavior: smooth;">
-  {% include essentials/nav-top.html %}
+  {% include main/nav-top.html %}
   <div class="flex-1">
     {{ content }}
   </div>
   {{site.data.settings.configuration.body_code_block}}
-  {% include essentials/footer.html %}
-  {% include essentials/scripts.html %}
+  {% include main/footer.html %}
+  {% include main/scripts.html %}
 </body>
 
 </html>

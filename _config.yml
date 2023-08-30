@@ -1,6 +1,3 @@
-cloudcannon:
-  data: true
-
 netlifycms: true
 
 sass:
@@ -19,15 +16,15 @@ comments:
 
 plugins:
   - jekyll-sitemap
-  - jekyll-webp
+  - jekyll-last-modified-at
   - jekyll-postcss
   - jekyll-purgecss
+  - jekyll_picture_tag
 
-webp:
-  enabled: true
-  nested: true
-  img_dir: ["/assets/images"]
-  regenerate: false
+picture:
+  source: "/"
+  output: "generated/"
+  suppress_warnings: true
   
 channels:
   - "Facebook"
